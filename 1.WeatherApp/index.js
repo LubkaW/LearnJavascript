@@ -30,4 +30,6 @@ async function handleSearch() {
     document.getElementById("temp").textContent = (data.main.temp ?? "{TEMP}") + "°c";
     document.getElementById("wind").textContent = (data.wind.speed ?? "{WIND}") + " km/h"
     document.getElementById("humidity").textContent = (data.main.humidity ?? "{HUMIDITY}") + " %"
+
+    document.querySelector(".weather").style.display = "block";
 }
